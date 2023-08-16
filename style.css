@@ -77,11 +77,11 @@ h2:hover{
     background-color: aliceblue;
 }
 
-#lostBoxOne{
+#popupBoxOne{
     display: none;
     justify-content: center;
 }
 
-.lostMsg{
+.popupMsg{
     font-size: 30px;
 }
