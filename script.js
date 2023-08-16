@@ -9,9 +9,8 @@ const roll = document.getElementById("roll");
 // one player consts
 const oneTitle = document.getElementById("oneTitle");
 const gameBox1 = document.getElementById("gameBox1");
-const score = document.getElementById("score");
-const rolls = document.getElementById("rolls");
-const wins = document.getElementById("wins");
+const scoreTally = document.getElementById("scoreTally");
+const rollTally = document.getElementById("rollTally");
 
 // click on one player game in menu
 onePlayer.addEventListener("click", () => {
@@ -26,12 +25,17 @@ backMenu.addEventListener("click",() => {
     title.textContent = "Welcome to the Dice game!";
     playerSelect.style.display = "flex";
     menuDiv.style.display = "none";
+    gameBox1.style.display = "none";
 })
 
 // roll number generator
-// roll.addEventListener("click", () => {
-//     let randNum = [];
-//     randNum.push(Math.ceil(Math.random() * 5));
-//     score = `score : ${randNum + }`
-// })
+let score = 0;
+let rolls = 0;
+roll.addEventListener("click", () => {
+    randNum = (Math.ceil(Math.random() * 6));
+    score = score + randNum;
+    rolls = rolls + 1;
+    scoreTally.textContent = score;
+    rollTally.textContent = rolls;
+})
 
