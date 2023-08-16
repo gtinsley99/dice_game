@@ -32,10 +32,13 @@ let score = 0;
 let rolls = 0;
 roll.addEventListener("click", () => {
     randNum = (Math.ceil(Math.random() * 6));
-    if (randNum === 1){
+    if (roll.textContent == "Play again"){
+        roll.textContent = "Roll";
         scoreTally.textContent = 0;
         rollTally.textContent = 0;
-        title.textContent = "You lost!";  
+    } else if (randNum === 1){
+        title.textContent = "You lost!";
+        roll.textContent = "Play again";
         score = 0;
         rolls = 0;
     } else{
@@ -48,6 +51,7 @@ roll.addEventListener("click", () => {
             title.textContent = "You Won!";
             score = 0;
             rolls = 0;
+            roll.textContent = "Play again";
         }     
 })
 

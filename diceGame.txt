@@ -1,0 +1,12 @@
+For dice game:
+
+Enter site:
+
+Welcome to the dice game - 1 player   2 players
+
+1 player press: die animation, score, rolls, back to main menu, roll button
+
+roll button- rolls dice, add number to score, increase roll + 1
+roll = 1 -reset score and rolls- you lose
+score >= 20 reset score and rolls, you win!popup, roll and score reset
+
