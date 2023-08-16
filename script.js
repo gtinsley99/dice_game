@@ -11,6 +11,7 @@ const oneTitle = document.getElementById("oneTitle");
 const gameBox1 = document.getElementById("gameBox1");
 const scoreTally = document.getElementById("scoreTally");
 const rollTally = document.getElementById("rollTally");
+const lostBoxOne = document.getElementById("lostBoxOne");
 
 // click on one player game in menu
 onePlayer.addEventListener("click", () => {
@@ -33,9 +34,18 @@ let score = 0;
 let rolls = 0;
 roll.addEventListener("click", () => {
     randNum = (Math.ceil(Math.random() * 6));
-    score = score + randNum;
-    rolls = rolls + 1;
-    scoreTally.textContent = score;
-    rollTally.textContent = rolls;
+    if (randNum === 1){
+        scoreTally.textContent = 0;
+        rollTally.textContent = 0;  
+        lostBoxOne.style.display = "flex";
+        score = 0;
+        rolls = 0;
+    } else{
+        lostBoxOne.style.display = "none"
+        score = score + randNum;
+        rolls = rolls + 1;
+        scoreTally.textContent = score;
+        rollTally.textContent = rolls;
+        }
 })
 
