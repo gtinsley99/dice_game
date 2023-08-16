@@ -34,6 +34,7 @@ roll.addEventListener("click", () => {
     randNum = (Math.ceil(Math.random() * 6));
     if (roll.textContent == "Play again"){
         roll.textContent = "Roll";
+        title.textContent = "One Player";
         scoreTally.textContent = 0;
         rollTally.textContent = 0;
     } else if (randNum === 1){
