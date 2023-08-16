@@ -39,7 +39,6 @@ h2:hover{
 
 #menuDiv{
     display: none;
-    justify-content: flex-end;
 }
 
 #gameBox1{
@@ -51,6 +50,7 @@ h2:hover{
     border: 5px solid grey;
     padding: 30px;
     margin-bottom: 20%;
+    width: 500px;
 }
 
 #stats{
@@ -77,11 +77,4 @@ h2:hover{
     background-color: aliceblue;
 }
 
-#popupBoxOne{
-    display: none;
-    justify-content: center;
-}
 
-.popupMsg{
-    font-size: 30px;
-}

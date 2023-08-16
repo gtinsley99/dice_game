@@ -7,17 +7,15 @@ const backMenu = document.getElementById("backMenu");
 const roll = document.getElementById("roll");
 
 // one player consts
-const oneTitle = document.getElementById("oneTitle");
 const gameBox1 = document.getElementById("gameBox1");
 const scoreTally = document.getElementById("scoreTally");
 const rollTally = document.getElementById("rollTally");
-const popupBoxOne = document.getElementById("popupBoxOne");
 
 // click on one player game in menu
 onePlayer.addEventListener("click", () => {
     title.textContent = "One Player";
     playerSelect.style.display = "none";
-    menuDiv.style.display = "flex";
+    menuDiv.style.display = "block";
     gameBox1.style.display = "flex";
 })
 
@@ -37,19 +35,17 @@ roll.addEventListener("click", () => {
     if (randNum === 1){
         scoreTally.textContent = 0;
         rollTally.textContent = 0;
-        popupBoxOne.textContent = "You lost!";  
-        popupBoxOne.style.display = "flex";
+        title.textContent = "You lost!";  
         score = 0;
         rolls = 0;
     } else{
-        popupBoxOne.style.display = "none";
+        title.textContent = "One Player";
         score = score + randNum;
         rolls = rolls + 1;
         scoreTally.textContent = score;
         rollTally.textContent = rolls;
         } if (score >= 20){
-            popupBoxOne.textContent = "You Won!";
-            popupBoxOne.style.display = "flex";
+            title.textContent = "You Won!";
             score = 0;
             rolls = 0;
         }     
