@@ -34,6 +34,26 @@ backMenu.addEventListener("click",() => {
 // roll number generator
 let score = 0;
 let rolls = 0;
+
+lostPopUp = () => {
+    title.textContent = "You lost!";
+        roll.textContent = "Play again";
+        score = 0;
+        rolls = 0;
+};
+
+winPopUp = () => {
+    title.textContent = "You Won!";
+    score = 0;
+    rolls = 0;
+    roll.textContent = "Play again";
+};
+
+scoreUp = () => {
+    scoreTally.textContent = score;
+    rollTally.textContent = rolls;
+};
+
 roll.addEventListener("click", () => {
     let randNum = (Math.ceil(Math.random() * 6));
     if (roll.textContent != "Play again")
@@ -49,38 +69,12 @@ roll.addEventListener("click", () => {
         scoreTally.textContent = 0;
         rollTally.textContent = 0;
     } else if (randNum === 1){
-        title.textContent = "You lost!";
-        roll.textContent = "Play again";
-        score = 0;
-        rolls = 0;
+        setTimeout(lostPopUp, 1000);
     } else{
-        title.textContent = "One Player";
         score = score + randNum;
         rolls = rolls + 1;
-        scoreTally.textContent = score;
-        rollTally.textContent = rolls;
+        setTimeout(scoreUp, 1000);
         } if (score >= 20){
-            title.textContent = "You Won!";
-            score = 0;
-            rolls = 0;
-            roll.textContent = "Play again";
+            setTimeout(winPopUp, 1000);
         }     
 })
-
-
-
-
-// elComeOut.onclick   = function () {rollDice();};
-
-// function rollDice() {
-
-//   var diceOne   = Math.floor((Math.random() * 6) + 1);
- 
-//   for (var i = 1; i <= 6; i++) {
-//     elDiceOne.classList.remove('show-' + i);
-//     if (diceOne === i) {
-//       elDiceOne.classList.add('show-' + i);
-//     }
-//   }
-//   setTimeout(rollDice(), 1000);
-// }
