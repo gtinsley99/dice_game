@@ -26,6 +26,9 @@ backMenu.addEventListener("click",() => {
     playerSelect.style.display = "flex";
     menuDiv.style.display = "none";
     gameBox1.style.display = "none";
+    roll.textContent = "roll";
+    scoreTally.textContent = 0;
+    rollTally.textContent = 0;
 })
 
 // roll number generator

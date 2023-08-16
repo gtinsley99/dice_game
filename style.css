@@ -56,7 +56,6 @@ h2:hover{
     padding: 30px;
     margin-bottom: 20%;
     width: 500px;
-    position: relative;
 }
 
 #oneBox{
@@ -90,6 +89,7 @@ h2:hover{
 }
 
 /* dice section */
+
 .game {
     position: relative;
     width: auto;
