@@ -7,81 +7,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id = "titleSection">
-        <h1 id = "title">Welcome to the Dice game!</h1>
-    </div>
-    
-    <!-- starting menu screen -->
-    <div id = "playerSelect">
-        <h2 id = "onePlayer">One player</h2>
-        <h2 id = "twoPlayers">Two players</h2>
-    </div>
+  <div id = "titleSection">
+    <h1 id = "title">Welcome to the Dice game!</h1>
+  </div>
 
-    <!-- div for one player game-->
-    <div>
-        <div id = "gameBox1">
-            <!-- add dice here -->
-            <div class = "game">
-              <div class="container">
-                <div id='dice1' class="dice dice-one">
-                  <div id="dice-one-side-one" class='side one'>
-                    <div class="dot one-1"></div>
-                  </div>
-                  <div id="dice-one-side-two" class='side two'>
-                    <div class="dot two-1"></div>
-                    <div class="dot two-2"></div>
-                  </div>
-                  <div id="dice-one-side-three" class='side three'>
-                    <div class="dot three-1"></div>
-                    <div class="dot three-2"></div>
-                    <div class="dot three-3"></div>
-                  </div>
-                  <div id="dice-one-side-four" class='side four'>
-                    <div class="dot four-1"></div>
-                    <div class="dot four-2"></div>
-                    <div class="dot four-3"></div>
-                    <div class="dot four-4"></div>
-                  </div>
-                  <div id="dice-one-side-five" class='side five'>
-                    <div class="dot five-1"></div>
-                    <div class="dot five-2"></div>
-                    <div class="dot five-3"></div>
-                    <div class="dot five-4"></div>
-                    <div class="dot five-5"></div>
-                  </div>
-                  <div id="dice-one-side-six" class='side six'>
-                    <div class="dot six-1"></div>
-                    <div class="dot six-2"></div>
-                    <div class="dot six-3"></div>
-                    <div class="dot six-4"></div>
-                    <div class="dot six-5"></div>
-                    <div class="dot six-6"></div>
-                  </div>
-                </div>
-            </div>
-            <div id = "oneBox">
-                <div id = "stats">
-                    <div class = "statsBox">
-                        <h3>Score :</h3>
-                        <p id = "scoreTally">0</p>
-                    </div>
-                    <div class = "statsBox">
-                        <h3>Rolls :</h3>
-                        <p id = "rollTally">0</p>
-                    </div>
-                </div>
+  <!-- starting menu screen -->
+  <div id = "playerSelect">
+     <h2 id = "onePlayer">One player</h2>
+    <h2 id = "twoPlayers">Two players</h2>
+  </div>
 
-                <div>
-                    <button id = "roll">Roll</button>
+  <!-- div for one player game-->
+  <div>
+    <!-- dice animation -->
+      <div id = "gameBox1">
+          <div class = "game">
+            <div class="container">
+              <div id='dice1' class="dice dice-one">
+                <div id="dice-one-side-one" class='side one'>
+                  <div class="dot one-1"></div>
                 </div>
-            </div>    
-        </div>
-    </div>    
-
-    <!-- back menu-->
-    <div id = "menuDiv">
-        <h2 id = "backMenu">Back to main menu</h2>
+                <div id="dice-one-side-two" class='side two'>
+                  <div class="dot two-1"></div>
+                  <div class="dot two-2"></div>
+                </div>
+                <div id="dice-one-side-three" class='side three'>
+                  <div class="dot three-1"></div>
+                  <div class="dot three-2"></div>
+                  <div class="dot three-3"></div>
+                </div>
+                <div id="dice-one-side-four" class='side four'>
+                  <div class="dot four-1"></div>
+                  <div class="dot four-2"></div>
+                  <div class="dot four-3"></div>
+                  <div class="dot four-4"></div>
+                </div>
+                <div id="dice-one-side-five" class='side five'>
+                  <div class="dot five-1"></div>
+                  <div class="dot five-2"></div>
+                  <div class="dot five-3"></div>
+                  <div class="dot five-4"></div>
+                  <div class="dot five-5"></div>
+                </div>
+                <div id="dice-one-side-six" class='side six'>
+                  <div class="dot six-1"></div>
+                  <div class="dot six-2"></div>
+                  <div class="dot six-3"></div>
+                  <div class="dot six-4"></div>
+                  <div class="dot six-5"></div>
+                  <div class="dot six-6"></div>
+                </div>
+              </div>
+          </div>
+          <!-- one player score and rolls -->
+          <div id = "oneBox">
+              <div id = "stats">
+                  <div class = "statsBox">
+                      <h3>Score :</h3>
+                      <p id = "scoreTally">0</p>
+                  </div>
+                  <div class = "statsBox">
+                      <h3>Rolls :</h3>
+                      <p id = "rollTally">0</p>
+                  </div>
+              </div>
+              <!-- roll button -->
+              <div>
+                  <button id = "roll">Roll</button>
+              </div>
+          </div>  
+              <!-- back menu-->
+     <div id = "menuDiv">
+      <h2 id = "backMenu">Back to main menu</h2>
     </div>
+      </div>
+  </div>    
+  
+   
 
 
 

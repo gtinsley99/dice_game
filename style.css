@@ -38,7 +38,7 @@ h2:hover{
 }
 
 #menuDiv{
-    display: none;
+    display: none;;
 }
 
 #backMenu{
@@ -48,6 +48,12 @@ h2:hover{
 
 #gameBox1{
     display: none;
+}
+
+#oneBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
@@ -56,12 +62,6 @@ h2:hover{
     padding: 30px;
     margin-bottom: 20%;
     width: 500px;
-}
-
-#oneBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #stats{
@@ -88,22 +88,20 @@ h2:hover{
     background-color: aliceblue;
 }
 
-/* dice section */
-
-.game {
-    position: relative;
-    width: auto;
-    height: 100%; 
-  }
+/* dice animation section */
 
 .container {
-    position: relative;
-    display: inline-block;
-    top: 200px;
+    background-color:rgb(123, 129, 138);
+    margin-bottom: 100px;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid aliceblue;
   }
 
   .dice {
-    position: relative;
+   
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
@@ -120,11 +118,6 @@ h2:hover{
   
   .dice-one {
     left: 450px; }
-  
-  .dice-two {
-    left: 300px;
-    top:-200px;
-  }
   
   .side {
     position: absolute;
@@ -201,3 +194,21 @@ h2:hover{
   
   .show-5 {
     transform: rotateX(450deg) rotateZ(-720deg); }
+
+/* .show-1a {
+        transform: rotateX(1440deg) rotateZ(-1440deg); }
+      
+.show-2a {
+        transform: rotateX(-1620deg) rotateZ(1800deg); }
+      
+.show-6a {
+        transform: rotateY(-1170deg) rotateZ(-2160deg); }
+      
+.show-3a {
+        transform: rotateY(1530deg) rotateZ(1440deg); }
+      
+.show-4a {
+        transform: rotateX(-1530deg) rotateZ(-1800deg); }
+      
+.show-5a {
+        transform: rotateX(1170deg) rotateZ(-1440deg); } */
