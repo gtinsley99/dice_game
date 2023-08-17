@@ -122,8 +122,6 @@ button{
 #playerBoxOne{
   flex-direction: column;
   align-items: center;
-  flex-direction: column;
-  align-items: center;
   background-color: aliceblue;
   color: black;
   border: 5px solid rgb(78, 255, 7);
@@ -133,8 +131,6 @@ button{
 }
 
 #playerBoxTwo{
-  flex-direction: column;
-  align-items: center;
   flex-direction: column;
   align-items: center;
   background-color: aliceblue;

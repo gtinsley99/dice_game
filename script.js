@@ -63,9 +63,6 @@ backMenu.addEventListener("click",() => {
     playerSelect.style.display = "flex";
     menuDiv.style.display = "none";
     gameBox.style.display = "none";
-    roll.textContent = "roll";
-    scoreTally.textContent = 0;
-    rollTally.textContent = 0;
 })
 
 // for score and roll tally
