@@ -40,11 +40,12 @@ h2:hover{
 
 #playerSelect{
     font-size: 20px;
+    position: fixed;
     display: flex;
     width: 50%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 25%;
     background-color: grey;
     border: 5px solid white;
     height: 10vw;
