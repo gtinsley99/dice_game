@@ -96,8 +96,7 @@ button{
 
 #twoBoxes{
     display: "none";
-    background-color: #d90429;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .playerBox{
@@ -109,7 +108,7 @@ button{
   color: black;
   border: 5px solid grey;
   padding: 30px;
-  margin-bottom: 20%;
+  margin-right: 20%;
   width: 500px;
 }
 
