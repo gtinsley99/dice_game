@@ -34,11 +34,15 @@ h2:hover{
     display: flex;
     width: 50%;
     justify-content: space-around;
-    margin-bottom: 18%;
+    margin-top: 10%;
 }
 
 #menuDiv{
-    display: none;;
+    display: none;
+    position: fixed;
+    margin-right: 20px;
+    bottom: 0;
+    right: 0;
 }
 
 #backMenu{
