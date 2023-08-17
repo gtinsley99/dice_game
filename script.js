@@ -43,7 +43,9 @@ onePlayer.addEventListener("click", () => {
     menuDiv.style.display = "block";
     gameBox.style.display = "flex";
     oneBox.style.display = "flex";
-    twoBoxes.style.display = "none";
+    playerBoxOne.style.display = "none";
+    playerBoxTwo.style.display = "none";
+    
 })
 
 // click on two player game in menu
@@ -53,9 +55,10 @@ twoPlayers.addEventListener("click", () => {
     playerSelect.style.display = "none";
     menuDiv.style.display = "block";
     gameBox.style.display = "flex";
-    twoBoxes.style.display = "flex";
     oneBox.style.display = "none";
-    container.style.maxWidth = "350px";
+    container.style.widthidth = "400px;";
+    playerBoxOne.style.display = "flex";
+    playerBoxTwo.style.display = "flex";
 })
 
 // click back to main menu
