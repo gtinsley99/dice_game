@@ -178,6 +178,25 @@ endLayout = () => {
     rollTwo.disabled = false;
 }
 
+// function for play again
+playAgain = () => {
+    rollOne.textContent = "Roll";
+    rollTwo.textContent = "Roll";
+    title.textContent = "Two Players";
+    oneScore = 0;
+    oneRolls = 0;
+    oneTotalScore = 0;
+    twoScore = 0;
+    twoRolls = 0;
+    twoTotalScore = 0;
+    totalScoreTallyOne.textContent = oneTotalScore;
+    turnScoreTallyOne.textContent = oneScore;
+    turnRollsTallyOne.textContent = oneRolls;
+    totalScoreTallyTwo.textContent = twoTotalScore;
+    turnScoreTallyTwo.textContent = twoScore;
+    turnRollsTallyTwo.textContent = twoRolls;
+}
+
 rollOne.addEventListener("click", () => {
     rollDiceOne();
 })
@@ -241,22 +260,8 @@ rollDiceOne = () => {
         }
     // reset score and roll count, play again button
     if (rollOne.textContent == "Play again" || rollTwo.textContent == "Play again"){
-        rollOne.textContent = "Roll";
-        rollTwo.textContent = "Roll";
-        title.textContent = "Two Players";
         playerOneTurn();
-        oneScore = 0;
-        oneRolls = 0;
-        oneTotalScore = 0;
-        twoScore = 0;
-        twoRolls = 0;
-        twoTotalScore = 0;
-        totalScoreTallyOne.textContent = oneTotalScore;
-        turnScoreTallyOne.textContent = oneScore;
-        turnRollsTallyOne.textContent = oneRolls;
-        totalScoreTallyTwo.textContent = twoTotalScore;
-        turnScoreTallyTwo.textContent = twoScore;
-        turnRollsTallyTwo.textContent = twoRolls;
+        playAgain();
     // when roll a 1
     } else if (randNum === 1){
       setTimeout(playerOneRollOne, 1000);
@@ -332,22 +337,8 @@ rollDiceTwo = () => {
         }
     // reset score and roll count, play again button
     if (rollTwo.textContent == "Play again" || rollOne.textContent == "Play again"){
-        rollOne.textContent = "Roll";
-        rollTwo.textContent = "Roll";
-        title.textContent = "Two Players";
+        playAgain();
         playerOneTurn();
-        oneScore = 0;
-        oneRolls = 0;
-        oneTotalScore = 0;
-        twoScore = 0;
-        twoRolls = 0;
-        twoTotalScore = 0;
-        totalScoreTallyOne.textContent = oneTotalScore;
-        turnScoreTallyOne.textContent = oneScore;
-        turnRollsTallyOne.textContent = oneRolls;
-        totalScoreTallyTwo.textContent = twoTotalScore;
-        turnScoreTallyTwo.textContent = twoScore;
-        turnRollsTallyTwo.textContent = twoRolls;
     // when roll a 1
     } else if (randNum === 1){
       setTimeout(playerTwoRollOne, 1000);
