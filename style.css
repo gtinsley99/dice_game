@@ -50,12 +50,12 @@ h2:hover{
     justify-content: center;
 }
 
-#gameBox1{
+#gameBox{
     display: none;
 }
 
 #oneBox{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     flex-direction: column;
@@ -90,6 +90,27 @@ h2:hover{
 
 #roll:hover{
     background-color: aliceblue;
+}
+
+/* two player section */
+
+#twoBoxes{
+    display: "none";
+    background-color: #d90429;
+    justify-content: space-around;
+}
+
+.playerBox{
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  color: black;
+  border: 5px solid grey;
+  padding: 30px;
+  margin-bottom: 20%;
+  width: 500px;
 }
 
 /* dice animation section */

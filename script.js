@@ -8,11 +8,15 @@ const roll = document.getElementById("roll");
 const dice = document.getElementById("dice1")
 const titleSection = document.getElementById("titleSection");
 const topSection = document.getElementById("topSection");
+const gameBox = document.getElementById("gameBox");
 
 // one player consts
-const gameBox1 = document.getElementById("gameBox1");
+const oneBox = document.getElementById("oneBox");
 const scoreTally = document.getElementById("scoreTally");
 const rollTally = document.getElementById("rollTally");
+
+// two player consts
+const twoBoxes = document.getElementById("twoBoxes");
 
 // click on one player game in menu
 onePlayer.addEventListener("click", () => {
@@ -20,7 +24,20 @@ onePlayer.addEventListener("click", () => {
     titleSection.style.marginBottom = "4%";
     playerSelect.style.display = "none";
     menuDiv.style.display = "block";
-    gameBox1.style.display = "flex";
+    gameBox.style.display = "flex";
+    oneBox.style.display = "flex";
+    twoBoxes.style.display = "none";
+})
+
+// click on two player game in menu
+twoPlayers.addEventListener("click", () => {
+    title.textContent = "Two Players";
+    titleSection.style.marginBottom = "4%";
+    playerSelect.style.display = "none";
+    menuDiv.style.display = "block";
+    gameBox.style.display = "flex";
+    twoBoxes.style.display = "flex";
+    oneBox.style.display = "none";
 })
 
 // click back to main menu
@@ -28,7 +45,7 @@ backMenu.addEventListener("click",() => {
     title.textContent = "Welcome to the Dice game!";
     playerSelect.style.display = "flex";
     menuDiv.style.display = "none";
-    gameBox1.style.display = "none";
+    gameBox.style.display = "none";
     roll.textContent = "roll";
     scoreTally.textContent = 0;
     rollTally.textContent = 0;
