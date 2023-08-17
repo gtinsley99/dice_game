@@ -28,6 +28,10 @@ const turnScoreTallyTwo = document.getElementById("turnScoreTallyTwo");
 const turnRollsTallyTwo = document.getElementById("turnRollsTallyTwo");
 const endTurnTwo = document.getElementById("endTurnTwo");
 
+// Disable buttons for player 2
+rollTwo.disabled = true;
+endTurnTwo.disabled = true;
+
 
 // click on one player game in menu
 onePlayer.addEventListener("click", () => {
@@ -65,7 +69,7 @@ backMenu.addEventListener("click",() => {
 // for score and roll tally
 let score = 0;
 let rolls = 0;
-let prevRoll = 0;
+let prevRoll = 1;
 
 // function for when roll a 1
 lostPopUp = () => {

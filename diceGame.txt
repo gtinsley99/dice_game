@@ -10,5 +10,26 @@ roll button- rolls dice, add number to score, increase roll + 1
 roll = 1 -reset score and rolls + you lose
 score >= 20 reset score and rolls, you win!popup, roll and score reset
 
+Dice game- 2 players:
+
+Dice stays in middle section.
+make header say 2 players, and player 1/2 won when they score + bank score >=20. set 2 score1 score2 etc
+player 1 score and rolls and banked score on left and bank score.
+player 2 same box on right.
+when hold pressed, score goes to bank score and next player can go.
+if 1 rolled, score goes to 0 and next player starts.
+player 1 starts and highlight, player 2 faded out box and doesnt react to press.
+
+how to make goes switch:
+
+Start- box 1 outlined, box 2 faded;
+box 2 buttons dont work;
+
+if player 1 rolls a 1 : box 2 outlined etc, box 2 buttons work, box 1 doesnt work;
+if player presses end turn: switch outline and buttons working to other player;
+when a player wins, Both boxes normal no highlight; end turn doesnt work on both for now
+when play again pressed, player 1 outlined etc, player 2 button stops working;
+
+
 
 

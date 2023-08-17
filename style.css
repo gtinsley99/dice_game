@@ -99,7 +99,20 @@ button{
     justify-content: center;
 }
 
-.playerBox{
+#playerBoxOne{
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  color: black;
+  border: 5px solid rgb(78, 255, 7);
+  padding: 30px;
+  margin-right: 20%;
+  width: 500px;
+}
+
+#playerBoxTwo{
   flex-direction: column;
   align-items: center;
   flex-direction: column;
@@ -107,6 +120,7 @@ button{
   background-color: aliceblue;
   color: black;
   border: 5px solid grey;
+  opacity: 0.5;
   padding: 30px;
   margin-right: 20%;
   width: 500px;
