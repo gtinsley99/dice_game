@@ -166,6 +166,18 @@ playerTwoTurn = () => {
     endTurnTwo.disabled = false;
 }
 
+// function for layout after any player wins
+endLayout = () => {
+    playerBoxOne.style.opacity = "1";
+    playerBoxTwo.style.opacity = "1";
+    playerBoxOne.style.border = "5px solid grey";
+    playerBoxTwo.style.border = "5px solid grey";
+    endTurnOne.disabled = true;
+    endTurnTwo.disabled = true;
+    rollOne.disabled = false;
+    rollTwo.disabled = false;
+}
+
 rollOne.addEventListener("click", () => {
     rollDiceOne();
 })
@@ -232,6 +244,7 @@ rollDiceOne = () => {
         rollOne.textContent = "Roll";
         rollTwo.textContent = "Roll";
         title.textContent = "Two Players";
+        playerOneTurn();
         oneScore = 0;
         oneRolls = 0;
         oneTotalScore = 0;
@@ -247,6 +260,7 @@ rollDiceOne = () => {
     // when roll a 1
     } else if (randNum === 1){
       setTimeout(playerOneRollOne, 1000);
+      setTimeout(playerTwoTurn, 1000);
     // when roll 2-6 
     } else{
         oneScore = oneScore + randNum;
@@ -255,6 +269,7 @@ rollDiceOne = () => {
         setTimeout(oneScoreUp, 1000);
         } if (oneTotalScore >= 20){
             setTimeout(oneWins, 1000);
+            setTimeout(endLayout, 1000);
         }        
         prevRoll = randNum; 
 }
@@ -266,6 +281,7 @@ endTurnOne.addEventListener("click", () => {
     oneRolls = 0; 
     turnScoreTallyOne.textContent = oneScore;
     turnRollsTallyOne.textContent = oneRolls;
+    playerTwoTurn();
 })
    
 // function for when player 2 rolls a one
@@ -319,6 +335,7 @@ rollDiceTwo = () => {
         rollOne.textContent = "Roll";
         rollTwo.textContent = "Roll";
         title.textContent = "Two Players";
+        playerOneTurn();
         oneScore = 0;
         oneRolls = 0;
         oneTotalScore = 0;
@@ -334,6 +351,7 @@ rollDiceTwo = () => {
     // when roll a 1
     } else if (randNum === 1){
       setTimeout(playerTwoRollOne, 1000);
+      setTimeout(playerOneTurn, 1000);
     // when roll 2-6 
     } else{
         twoScore = twoScore + randNum;
@@ -342,6 +360,7 @@ rollDiceTwo = () => {
         setTimeout(twoScoreUp, 1000);
         } if (twoTotalScore >= 20){
             setTimeout(twoWins, 1000);
+            setTimeout(endLayout, 1000);
         }        
         prevRoll = randNum; 
 }
@@ -353,4 +372,5 @@ endTurnTwo.addEventListener("click", () => {
     twoRolls = 0; 
     turnScoreTallyTwo.textContent = twoScore;
     turnRollsTallyTwo.textContent = twoRolls;
+    playerOneTurn();
 }) 
