@@ -78,8 +78,13 @@ scoreUp = () => {
     rollTally.textContent = rolls;
 };
 
-// dice roll core code
+// dice roll one player
 roll.addEventListener("click", () => {
+    rollDice();
+    })
+
+// dice roll function
+rollDice = () => {
     let randNum = (Math.ceil(Math.random() * 6));
     // dice animation to number rolled
     if (roll.textContent != "Play again")
@@ -116,4 +121,5 @@ roll.addEventListener("click", () => {
             setTimeout(winPopUp, 1000);
         }        
         prevRoll = randNum; 
-    })
+}
+    
