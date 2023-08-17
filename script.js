@@ -17,6 +17,8 @@ const rollTally = document.getElementById("rollTally");
 
 // two player consts
 const twoBoxes = document.getElementById("twoBoxes");
+const playerBoxOne = document.getElementById("playerBoxOne")
+const playerBoxTwo = document.getElementById("playerBoxTwo")
 const rollOne = document.getElementById("rollOne");
 const rollTwo = document.getElementById("rollTwo");
 const totalScoreTallyOne = document.getElementById("totalScoreTallyOne");
@@ -139,6 +141,30 @@ rollDice = () => {
 }
 
 // two player section
+
+// function for player 1 go
+playerOneTurn = () => {
+    playerBoxOne.style.opacity = "1";
+    playerBoxOne.style.border = "5px solid rgb(78, 255, 7)";
+    rollOne.disabled = false;
+    endTurnOne.disabled = false;
+    playerBoxTwo.style.opacity = "0.5";
+    playerBoxTwo.style.border = "5px solid grey";
+    rollTwo.disabled = true;
+    endTurnTwo.disabled = true;
+}
+
+// function for player 2 go
+playerTwoTurn = () => {
+    playerBoxOne.style.opacity = "0.5";
+    playerBoxOne.style.border = "5px solid grey";
+    rollOne.disabled = true;
+    endTurnOne.disabled = true;
+    playerBoxTwo.style.opacity = "1";
+    playerBoxTwo.style.border = "5px solid rgb(78, 255, 7)";
+    rollTwo.disabled = false;
+    endTurnTwo.disabled = false;
+}
 
 rollOne.addEventListener("click", () => {
     rollDiceOne();
