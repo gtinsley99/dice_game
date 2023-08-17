@@ -150,6 +150,8 @@ button{
     justify-content: center;
     align-items: center;
     border: 5px solid aliceblue;
+    /* position: relative;
+    left: ; */
   }
 
   .dice {

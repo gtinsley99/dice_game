@@ -17,7 +17,6 @@ const scoreTally = document.getElementById("scoreTally");
 const rollTally = document.getElementById("rollTally");
 
 // two player consts
-const twoBoxes = document.getElementById("twoBoxes");
 const playerBoxOne = document.getElementById("playerBoxOne")
 const playerBoxTwo = document.getElementById("playerBoxTwo")
 const rollOne = document.getElementById("rollOne");
