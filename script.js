@@ -37,6 +37,7 @@ backMenu.addEventListener("click",() => {
 // for score and roll tally
 let score = 0;
 let rolls = 0;
+let prevRoll = 0;
 
 // function for when roll a 1
 lostPopUp = () => {
@@ -66,10 +67,19 @@ roll.addEventListener("click", () => {
     // dice animation to number rolled
     if (roll.textContent != "Play again")
         for (let i = 1; i <= 6; i++) {
-            dice.classList.remove(`show-${i}`);
-            if (randNum === i) {
-            dice.classList.add(`show-${i}`);
+            dice.classList.remove("show-" + i);
+            if (randNum == i){
+                   // if number is rolled twice add animation
+            if (randNum === prevRoll){
+                dice.classList.add("show-" + (prevRoll - 1));
+                setTimeout(() => {
+                    dice.classList.remove("show-" + (prevRoll - 1));
+                    dice.classList.add("show-" + i);
+                }, 300)
+            } else {
+                dice.classList.add("show-" + i);
             }
+            }   
         }
     // reset score and roll count, play again button
     if (roll.textContent == "Play again"){
@@ -87,5 +97,6 @@ roll.addEventListener("click", () => {
         setTimeout(scoreUp, 1000);
         } if (score >= 20){
             setTimeout(winPopUp, 1000);
-        }     
-})
+        }        
+        prevRoll = randNum; 
+    })
