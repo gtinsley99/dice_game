@@ -65,6 +65,7 @@ backMenu.addEventListener("click",() => {
     menuDiv.style.display = "none";
     gameBox.style.display = "none";
     container.style.maxWidth = "100%";
+    oneBox.style.display = "none";
 })
 
 // for score and roll tally
