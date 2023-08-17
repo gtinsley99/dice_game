@@ -9,6 +9,7 @@ const dice = document.getElementById("dice1")
 const titleSection = document.getElementById("titleSection");
 const topSection = document.getElementById("topSection");
 const gameBox = document.getElementById("gameBox");
+const container = document.getElementById("container");
 
 // one player consts
 const oneBox = document.getElementById("oneBox");
@@ -55,6 +56,7 @@ twoPlayers.addEventListener("click", () => {
     gameBox.style.display = "flex";
     twoBoxes.style.display = "flex";
     oneBox.style.display = "none";
+    container.style.maxWidth = "350px";
 })
 
 // click back to main menu
@@ -63,6 +65,7 @@ backMenu.addEventListener("click",() => {
     playerSelect.style.display = "flex";
     menuDiv.style.display = "none";
     gameBox.style.display = "none";
+    container.style.maxWidth = "100%";
 })
 
 // for score and roll tally

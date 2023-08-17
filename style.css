@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
 }
 
 h2{
@@ -115,11 +116,6 @@ button{
 
 /* two player section */
 
-#twoBoxes{
-    display: "none";
-    justify-content: center;
-}
-
 #playerBoxOne{
   flex-direction: column;
   align-items: center;
@@ -145,10 +141,11 @@ button{
 
 /* dice animation section */
 
-.container {
+#container {
     background-color:rgb(123, 129, 138);
     margin-bottom: 100px;
     height: 15vw;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
