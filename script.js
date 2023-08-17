@@ -205,6 +205,9 @@ rollDiceOne = () => {
         oneScore = 0;
         oneRolls = 0;
         oneTotalScore = 0;
+        twoScore = 0;
+        twoRolls = 0;
+        twoTotalScore = 0;
         totalScoreTallyOne.textContent = oneTotalScore;
         turnScoreTallyOne.textContent = oneScore;
         turnRollsTallyOne.textContent = oneRolls;
@@ -289,6 +292,9 @@ rollDiceTwo = () => {
         oneScore = 0;
         oneRolls = 0;
         oneTotalScore = 0;
+        twoScore = 0;
+        twoRolls = 0;
+        twoTotalScore = 0;
         totalScoreTallyOne.textContent = oneTotalScore;
         turnScoreTallyOne.textContent = oneScore;
         turnRollsTallyOne.textContent = oneRolls;
@@ -313,8 +319,8 @@ rollDiceTwo = () => {
 // function for when player 2 holds
 endTurnTwo.addEventListener("click", () => {
     totalScoreTallyTwo.textContent =  twoTotalScore; 
-    oneScore = 0;
-    oneRolls = 0; 
+    twoScore = 0;
+    twoRolls = 0; 
     turnScoreTallyTwo.textContent = twoScore;
     turnRollsTallyTwo.textContent = twoRolls;
 }) 
