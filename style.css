@@ -7,7 +7,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 h2{
@@ -124,7 +124,10 @@ button{
   border: 5px solid rgb(78, 255, 7);
   padding: 30px;
   margin-right: 20%;
-  width: 500px;
+  width: 400px;
+  position: relative;
+  left: -100%;
+  bottom: 29%;
 }
 
 #playerBoxTwo{
@@ -136,7 +139,10 @@ button{
   opacity: 0.5;
   padding: 30px;
   margin-right: 20%;
-  width: 500px;
+  width: 400px;
+  position: relative;
+  left: 115%;
+  bottom: 60%;
 }
 
 /* dice animation section */
@@ -150,8 +156,6 @@ button{
     justify-content: center;
     align-items: center;
     border: 5px solid aliceblue;
-    /* position: relative;
-    left: ; */
   }
 
   .dice {

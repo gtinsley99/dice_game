@@ -56,9 +56,13 @@ twoPlayers.addEventListener("click", () => {
     menuDiv.style.display = "block";
     gameBox.style.display = "flex";
     oneBox.style.display = "none";
-    container.style.widthidth = "400px;";
+    container.style.width = "400px";
     playerBoxOne.style.display = "flex";
     playerBoxTwo.style.display = "flex";
+    container.style.position = "relative";
+    container.style.left = "16%";
+    container.style.bottom = "-10%"
+    container.style.height = "350px";
 })
 
 // click back to main menu
@@ -69,6 +73,9 @@ backMenu.addEventListener("click",() => {
     gameBox.style.display = "none";
     container.style.maxWidth = "100%";
     oneBox.style.display = "none";
+    container.style.width = "auto";
+    container.style.position = "static";
+    container.style.height = "15vw";
 })
 
 // for score and roll tally
