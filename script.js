@@ -17,8 +17,8 @@ const scoreTally = document.getElementById("scoreTally");
 const rollTally = document.getElementById("rollTally");
 
 // two player consts
-const playerBoxOne = document.getElementById("playerBoxOne")
-const playerBoxTwo = document.getElementById("playerBoxTwo")
+const playerOneDiv = document.getElementById("playerOneDiv")
+const playerTwoDiv = document.getElementById("playerTwoDiv")
 const rollOne = document.getElementById("rollOne");
 const rollTwo = document.getElementById("rollTwo");
 const totalScoreTallyOne = document.getElementById("totalScoreTallyOne");
@@ -43,8 +43,8 @@ onePlayer.addEventListener("click", () => {
     menuDiv.style.display = "block";
     gameBox.style.display = "flex";
     oneBox.style.display = "flex";
-    playerBoxOne.style.display = "none";
-    playerBoxTwo.style.display = "none";
+    playerOneDiv.style.display = "none";
+    playerTwoDiv.style.display = "none";
     
 })
 
@@ -57,8 +57,8 @@ twoPlayers.addEventListener("click", () => {
     gameBox.style.display = "flex";
     oneBox.style.display = "none";
     container.style.width = "400px";
-    playerBoxOne.style.display = "flex";
-    playerBoxTwo.style.display = "flex";
+    playerOneDiv.style.display = "block";
+    playerTwoDiv.style.display = "block";
     container.style.position = "relative";
     container.style.left = "16%";
     container.style.bottom = "-9.6%"

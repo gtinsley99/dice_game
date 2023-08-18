@@ -117,6 +117,7 @@ button{
 /* two player section */
 
 #playerBoxOne{
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: aliceblue;
@@ -125,12 +126,26 @@ button{
   padding: 30px;
   margin-right: 20%;
   width: 400px;
+}  
+
+#playerOneDiv{
+  display: none;
   position: relative;
   left: -100%;
-  bottom: 29%;
+  bottom: 30.1%;
+}
+
+.playerTitle{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 25%;
+  padding: 20px;
+  font-size: 30px;
 }
 
 #playerBoxTwo{
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: aliceblue;
@@ -140,9 +155,13 @@ button{
   padding: 30px;
   margin-right: 20%;
   width: 400px;
+}
+
+#playerTwoDiv{
+  display: none;
   position: relative;
   left: 115%;
-  bottom: 60%;
+  bottom: 65%;
 }
 
 #rollsTwo{
