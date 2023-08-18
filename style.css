@@ -210,6 +210,7 @@ button{
     margin-bottom: 100px;
     height: 15vw;
     min-height: 200px;
+    min-width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,13 +365,33 @@ button{
      }
       
     }
-    @media only screen and (max-width: 650px) and (min-width: 520px) {
+    @media only screen and (max-width: 650px){
       h1{
         font-size: 30px;
       }
 
       #playerSelect{
         bottom: 300px;
+      }
+
+      #gameBox{
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #container{
+        min-width: 350px;
+        margin-top: 40px;
+      }
+
+      #oneBox{
+        width: 300px;
       }
       
     }
@@ -383,7 +404,25 @@ button{
       #playerSelect{
         bottom: 270px;
       }
-      
+
+      #gameBox{
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #oneBox{
+        width: 400px;
+      }
+
+      #container{
+        margin-top: 40px;
+      }
     }
 
     @media only screen and (max-width: 1200px) and (min-width: 520px){
