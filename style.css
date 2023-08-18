@@ -53,6 +53,36 @@ h2:hover{
     color: white;
 }
 
+#rulesDiv{
+    position: fixed;
+    bottom: 0;
+}
+
+.rulesList{
+  font-size: 19px;
+}
+
+.listItem{
+  margin-bottom: 30px;
+}
+
+#diceRules{
+  display: none;
+  position: relative;
+  bottom: 150px;
+}
+
+.playerRules{
+  width: 500px;
+  margin: 70px;
+}
+
+#rules:hover{
+  background-color: black;
+  color: white;
+  border: 2px dashed white;
+}
+
 #menuDiv{
     display: none;
     position: fixed;

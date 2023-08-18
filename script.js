@@ -10,6 +10,8 @@ const titleSection = document.getElementById("titleSection");
 const topSection = document.getElementById("topSection");
 const gameBox = document.getElementById("gameBox");
 const container = document.getElementById("container");
+const rules = document.getElementById("rules");
+const diceRules = document.getElementById("diceRules");
 
 // one player consts
 const oneBox = document.getElementById("oneBox");
@@ -45,7 +47,16 @@ onePlayer.addEventListener("click", () => {
     oneBox.style.display = "flex";
     playerOneDiv.style.display = "none";
     playerTwoDiv.style.display = "none";
-    
+    rules.style.display = "none";
+})
+
+// click on rules
+rules.addEventListener("click", () => {
+    title.textContent = "Rules";
+    diceRules.style.display = "flex";
+    playerSelect.style.display = "none";
+    menuDiv.style.display = "block";
+    rules.style.display = "none";
 })
 
 // click on two player game in menu
@@ -63,6 +74,7 @@ twoPlayers.addEventListener("click", () => {
     container.style.left = "16%";
     container.style.bottom = "-9.6%"
     container.style.height = "359px";
+    rules.style.display = "none";
 })
 
 // click back to main menu
@@ -76,6 +88,7 @@ backMenu.addEventListener("click",() => {
     container.style.width = "auto";
     container.style.position = "static";
     container.style.height = "15vw";
+    rules.style.display = "block";
 })
 
 // for score and roll tally
