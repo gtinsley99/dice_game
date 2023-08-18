@@ -77,6 +77,7 @@ h2:hover{
 .playerRules{
   width: 500px;
   margin: 70px;
+
 }
 
 #rules:hover{
@@ -324,6 +325,43 @@ button{
         padding: 50px 0px 50px 0;
         min-width: 350px;
       }
+
+      #Rules{
+        font-size: 10px;
+      }
+
+      body{
+        overflow: auto;
+      }
+
+     #diceRules{
+      flex-direction: column;
+      position: static;
+      padding-bottom: 200px;
+     }
+
+     .playerRules{
+      height: 300px;
+      margin-top: 20px;
+      margin-bottom: 100px;
+     }
+
+     li{
+      max-width: 300px;
+     }
+
+     ul{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 90px;
+     }
+
+     #menuDiv{
+      position: static;
+      margin-top: 100px;
+      margin-bottom: 100px;
+     }
       
     }
     @media only screen and (max-width: 650px) and (min-width: 520px) {
@@ -346,4 +384,28 @@ button{
         bottom: 270px;
       }
       
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 520px){
+      body{
+        overflow: auto;
+      }
+
+     #diceRules{
+      flex-direction: column;
+      position: static;
+      padding-bottom: 200px;
+     }
+
+     .playerRules{
+      height: 300px;
+      margin-top: 20px;
+      margin-bottom: 100px;
+     }
+
+     #menuDiv{
+      position: static;
+      margin-top: 50px;
+      margin-bottom: 100px;
+     }
     }
