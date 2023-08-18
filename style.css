@@ -517,7 +517,6 @@ button{
         max-width: 250px;
         padding-left: 10px;
         padding-right: 10px;
-        height: 300px;
       }
 
       #playerTwoDiv{
@@ -600,8 +599,8 @@ button{
       }
   }
 
-  @media only screen and (min-width: 1200px){
+  /* @media only screen and (min-width: 1200px){
     body{
-      height: 1vh;
+      
     }
-  }
+  } */
