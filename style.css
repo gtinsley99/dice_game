@@ -163,9 +163,10 @@ button{
 
 #playerOneDiv{
   display: none;
+  flex-direction: column;
   position: relative;
   left: -100%;
-  bottom: 30.1%;
+  bottom: 31.3%;
 }
 
 .playerTitle{
@@ -192,9 +193,10 @@ button{
 
 #playerTwoDiv{
   display: none;
+  flex-direction: column;
   position: relative;
   left: 115%;
-  bottom: 65%;
+  bottom: 65.5%;
 }
 
 #rollsTwo{
@@ -345,6 +347,32 @@ button{
       margin-top: 100px;
       margin-bottom: 100px;
      }
+
+     #playerOneDiv{
+      position: relative;
+      left: 46px;
+      bottom: 90px;
+    }
+
+    #playerTwoDiv{
+      position: relative;
+      left: 46px;
+      bottom: 70px;
+    }
+
+    #playersDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #playerBoxOne{
+      width: 240px;
+    }
+
+    #playerBoxTwo{
+      width: 240px;
+    }
       
     }
 
@@ -355,12 +383,6 @@ button{
       width: 10px;
       padding: 50px 0px 50px 0;
       min-width: 350px;
-      }
-    }
-
-    @media only screen and (max-width: 650px) and (min-width: 520px){
-      h1{
-        font-size: 30px;
       }
     }
 
@@ -409,6 +431,23 @@ button{
       #container{
         margin-top: 40px;
       }
+      #playerOneDiv{
+        position: relative;
+        left: 46px;
+        bottom: 90px;
+      }
+
+      #playerTwoDiv{
+        position: relative;
+        left: 46px;
+        bottom: 70px;
+      }
+
+      #playersDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     @media only screen and (max-width: 1200px) and (min-width: 520px){
@@ -416,6 +455,10 @@ button{
         position: static;
         margin-top: 50px;
         margin-bottom: 100px;
+       }
+
+       #oneBox{
+        margin-top: 75px;
        }
     }
 
@@ -436,3 +479,109 @@ button{
       margin-bottom: 100px;
      }
     }
+
+    @media only screen and (max-width: 1570px) and (min-width: 1330px){
+      #playerOneDiv{
+        max-width: 350px;
+        left: -75%;
+        bottom: 31.3%;
+      }
+
+      #playerBoxOne{
+        max-width: 300px;
+        padding: 10px;
+        height: 340px;
+      }
+
+      #playerTwoDiv{
+        max-width: 350px;
+        left: 120%;
+        bottom: 65.5%;
+      }
+
+      #playerBoxTwo{
+        max-width: 300px;
+        padding: 10px;
+        height: 340px;
+      }
+    }
+
+    @media only screen and (max-width: 1330px) and (min-width: 1200px){
+      #playerOneDiv{
+        max-width: 300px;
+        left: -60%;
+        bottom: 31.3%;
+      }
+
+      #playerBoxOne{
+        max-width: 250px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 300px;
+      }
+
+      #playerTwoDiv{
+        max-width: 300px;
+        left: 115%;
+        bottom: 65.5%;
+      }
+
+      #playerBoxTwo{
+        max-width: 250px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 950px){
+      #playerOneDiv{
+        position: relative;
+        left: 46px;
+        bottom: -150px;
+      }
+
+      #playerTwoDiv{
+        position: relative;
+        left: 46px;
+        bottom: -150px;
+        margin-bottom: 250px;
+      }
+
+      #playersDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #container{
+        margin-bottom: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 650px) and (min-width: 520px){
+      #playerOneDiv{
+        position: relative;
+        left: 46px;
+        bottom: 100px;
+      }
+
+      #playerTwoDiv{
+        position: relative;
+        left: 46px;
+        bottom: 70px;
+      }
+
+      h1{
+        font-size: 30px;
+      }
+
+      #playerBoxOne{
+        width: 300px;
+      }
+  
+      #playerBoxTwo{
+        width: 300px;
+      }
+  }
+
