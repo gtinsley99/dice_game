@@ -327,6 +327,11 @@ button{
         font-size: 25px;
       }
 
+      #container{
+        min-width: 250px;
+        margin-top: 40px;
+      }
+
       #Rules{
         font-size: 10px;
       }
@@ -344,6 +349,7 @@ button{
 
      #menuDiv{
       position: static;
+      position: relative;
       margin-top: 100px;
       margin-bottom: 100px;
      }
@@ -372,8 +378,7 @@ button{
 
     #playerBoxTwo{
       width: 240px;
-    }
-      
+    }   
     }
 
     @media only screen and (max-width: 700px){
@@ -389,11 +394,6 @@ button{
     @media only screen and (max-width: 650px){
       #playerSelect{
         bottom: 300px;
-      }
-
-      #container{
-        min-width: 350px;
-        margin-top: 40px;
       }
 
       #oneBox{
@@ -541,11 +541,21 @@ button{
         bottom: -150px;
       }
 
+      #playerBoxOne{
+        max-width: 425px;
+        width: 500px;
+      }
+
       #playerTwoDiv{
         position: relative;
         left: 46px;
         bottom: -150px;
         margin-bottom: 250px;
+      }
+
+      #playerBoxTwo{
+        max-width: 425px;
+        width: 500px;
       }
 
       #playersDiv{
@@ -583,5 +593,15 @@ button{
       #playerBoxTwo{
         width: 300px;
       }
+
+      #container{
+        min-width: 350px;
+        margin-top: 40px;
+      }
   }
 
+  @media only screen and (min-width: 1200px){
+    body{
+      height: 1vh;
+    }
+  }
