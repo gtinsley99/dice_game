@@ -61,8 +61,8 @@ twoPlayers.addEventListener("click", () => {
     playerBoxTwo.style.display = "flex";
     container.style.position = "relative";
     container.style.left = "16%";
-    container.style.bottom = "-10%"
-    container.style.height = "350px";
+    container.style.bottom = "-9.6%"
+    container.style.height = "359px";
 })
 
 // click back to main menu
