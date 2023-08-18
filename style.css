@@ -46,10 +46,12 @@ h2:hover{
     width: 50%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 400px;
     background-color: grey;
     border: 5px solid white;
     height: 10vw;
+    min-height: 150px;
+    min-width: 500px;
     color: white;
 }
 
@@ -307,3 +309,41 @@ button{
   
   .show-5 {
     transform: rotateX(450deg) rotateZ(-720deg); }
+
+
+    /* media properties */
+    @media only screen and (max-width: 520px) {
+      h1{
+        font-size: 25px;
+      }
+
+      #playerSelect{
+        bottom: 300px;
+        flex-direction: column;
+        width: 10px;
+        padding: 50px 0px 50px 0;
+        min-width: 350px;
+      }
+      
+    }
+    @media only screen and (max-width: 650px) and (min-width: 520px) {
+      h1{
+        font-size: 30px;
+      }
+
+      #playerSelect{
+        bottom: 300px;
+      }
+      
+    }
+
+    @media only screen and (max-width: 950px) and (min-width: 650px) {
+      h1{
+        font-size: 40px;
+      }
+
+      #playerSelect{
+        bottom: 270px;
+      }
+      
+    }
