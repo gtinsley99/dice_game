@@ -52,11 +52,13 @@ onePlayer.addEventListener("click", () => {
 
 // click on rules
 rules.addEventListener("click", () => {
+    rules.style.display = "none";
+    menuDiv.style.display = "block";
     title.textContent = "Rules";
     diceRules.style.display = "flex";
+    gameBox.style.display = "flex";
+    container.style.display = "none";
     playerSelect.style.display = "none";
-    menuDiv.style.display = "block";
-    rules.style.display = "none";
 })
 
 // click on two player game in menu
@@ -88,7 +90,9 @@ backMenu.addEventListener("click",() => {
     container.style.width = "auto";
     container.style.position = "static";
     container.style.height = "15vw";
+    container.style.display = "flex";
     rules.style.display = "block";
+    diceRules.style.display = "none";
 })
 
 // for score and roll tally

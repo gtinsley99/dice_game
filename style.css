@@ -68,8 +68,8 @@ h2:hover{
 
 #diceRules{
   display: none;
-  position: relative;
-  bottom: 150px;
+  position: fixed;
+  bottom: 20px;
 }
 
 .playerRules{
