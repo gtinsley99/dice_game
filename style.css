@@ -314,38 +314,20 @@ button{
 
 
     /* media properties */
+    /* @media only screen and (max-width: 450px) {
+      h1{
+        font-size: 17px;
+      }
+    } */
+
     @media only screen and (max-width: 520px) {
       h1{
         font-size: 25px;
       }
 
-      #playerSelect{
-        bottom: 300px;
-        flex-direction: column;
-        width: 10px;
-        padding: 50px 0px 50px 0;
-        min-width: 350px;
-      }
-
       #Rules{
         font-size: 10px;
       }
-
-      body{
-        overflow: auto;
-      }
-
-     #diceRules{
-      flex-direction: column;
-      position: static;
-      padding-bottom: 200px;
-     }
-
-     .playerRules{
-      height: 300px;
-      margin-top: 20px;
-      margin-bottom: 100px;
-     }
 
      li{
       max-width: 300px;
@@ -365,24 +347,26 @@ button{
      }
       
     }
-    @media only screen and (max-width: 650px){
+
+    @media only screen and (max-width: 700px){
+    #playerSelect{
+      bottom: 300px;
+      flex-direction: column;
+      width: 10px;
+      padding: 50px 0px 50px 0;
+      min-width: 350px;
+      }
+    }
+
+    @media only screen and (max-width: 650px) and (min-width: 520px){
       h1{
         font-size: 30px;
       }
+    }
 
+    @media only screen and (max-width: 650px){
       #playerSelect{
         bottom: 300px;
-      }
-
-      #gameBox{
-        flex-direction: column;
-        align-items: center;
-        
-      }
-      .game{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
       }
 
       #container{
@@ -396,15 +380,7 @@ button{
       
     }
 
-    @media only screen and (max-width: 950px) and (min-width: 650px) {
-      h1{
-        font-size: 40px;
-      }
-
-      #playerSelect{
-        bottom: 270px;
-      }
-
+    @media only screen and (max-width: 950px){
       #gameBox{
         flex-direction: column;
         align-items: center;
@@ -414,6 +390,16 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+    }
+
+    @media only screen and (max-width: 950px) and (min-width: 650px) {
+      h1{
+        font-size: 40px;
+      }
+
+      #playerSelect{
+        bottom: 270px;
       }
 
       #oneBox{
@@ -426,6 +412,14 @@ button{
     }
 
     @media only screen and (max-width: 1200px) and (min-width: 520px){
+      #menuDiv{
+        position: static;
+        margin-top: 50px;
+        margin-bottom: 100px;
+       }
+    }
+
+    @media only screen and (max-width: 1200px){
       body{
         overflow: auto;
       }
@@ -439,12 +433,6 @@ button{
      .playerRules{
       height: 300px;
       margin-top: 20px;
-      margin-bottom: 100px;
-     }
-
-     #menuDiv{
-      position: static;
-      margin-top: 50px;
       margin-bottom: 100px;
      }
     }
